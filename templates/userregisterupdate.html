@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<center><div class="user">
+		<form method="POST" enctype="multipart/form-data">
+			{% csrf_token %}
+			{{form.as_p}}
+			<button>update</button>
+		</form>
+	</div> </center>
+
+<style>
+	.user{
+		width:350px ;
+		height:250px;
+		background-color: lightgray;
+		margin-top:300px;
+		padding-top: 130px; 
+		border-radius: 30px;
+	}
+
+	button{
+		margin-top: 20px;
+		width:100px ;
+		height:40px ;
+		border-radius: 20px;
+		background-color: lightgreen;
+	}
+
+
+</style>
+
+
+</body>
+</html>

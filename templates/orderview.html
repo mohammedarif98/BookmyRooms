@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table>
+		<p></p>
+		{% for i in data %}
+			<tr>
+
+				<td>{{i.user}}</td>
+				<td>{{i.price}}</td>
+				<td>{{i.booking_date}}</td>
+				<td>{{i.days}}</td>
+				<td>{{i.hotel_booked}}</td>
+				<td>{{i.hotel_name}}</td>
+			</tr>
+		{% endfor %}
+	</table>
+
+</body>
+</html>

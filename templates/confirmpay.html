@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title></title>
+</head>
+<body>
+		<div class="cp">
+		<center>	<table>
+				
+				<center><tr><td>Name :{{user}}</td></tr></center>
+				<center><tr><td>Hotel Name :{{hotel_booked}}</td></tr></center>
+				<center><tr><td>Amount Pay:{{price}}</td></tr></center>
+				<center><tr><td>Day :{{Days}}</td></tr></center>
+				<center><tr><td>Booked Date :{{booking_date}}</td></tr></center>
+				<center><tr><td>Room Type :{{room_type}}</td></tr></center>
+			</table>
+				<center><button><a style="text-decoration: none;" href="{% url 'pay' %}">  pay</button></a></center>
+		</div>	
+		
+<style>
+
+.cp{
+	background-color: royalblue;
+	width: 500px;
+	height: 400px;
+	margin-left: 700px;
+	margin-top: 300px;
+	border-radius: 15px;
+	padding-top: 80px;
+	padding-left: 10px;
+	font-size:20px;
+}	
+
+button{
+	width: 200px;
+	height: 40px;
+	margin-top:30px;
+	background-color: lightgreen;
+}
+</style>
+
+</body>
+</html>

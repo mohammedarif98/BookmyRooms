@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<title>User details</title>
+</head>
+<body>
+<div class="container">
+<center>
+<br>
+<h1>User Details</h1>
+<br><br>
+<table class="table table_stripped">
+
+<tr>
+<!-- <th>PROFILE PICTURE</td> -->
+<th>USER NAME</th>
+<th>FIRST NAME</th>
+<th>LAST NAME</th>
+<th>MAIL ID</th>
+<th>AGE</th>
+<th>Contact no</th>
+<!-- <th>CV</th> -->
+<th></th>
+</tr>
+
+<tr>
+<!-- <td><img src="{{Profile_picture.url}}" height="250px" width="250px"></td> -->
+<td>{{request.user}}</td>
+<td>{{request.user.first_name}}</td>
+<td>{{request.user.last_name}}</td>
+<td>{{request.user.email}}</td>
+<td>{{dob}}</td>
+<td>{{mobile_no}}</td>
+<!-- <td><img src="{{CV.url}}" height="250px" width="250px"></td> -->
+</tr>
+<br>
+<tr>
+<td>
+<!-- <a href="{% url 'userhome' %}">Back to home</a> -->
+</td>
+<td></td><td></td><td></td>
+<td>
+<!-- <a href=""><button><h4>EDIT</h4></button></a> -->
+</td>
+</tr>
+
+</table>
+</center>
+</div>
+</body>
+</html>

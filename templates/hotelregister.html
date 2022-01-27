@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/hotelregister.css' %}">
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body  background="{% static 'images/about12.jpg' %}">
+	<form method="POST" enctype="multipart/form-data">
+	 {% csrf_token %}
+
+	 	<div class="container">
+   
+      <div class="border-box" >
+        <h1><b>signup</b></h1>
+
+    <center>   
+      <form method="POST"  enctype="multipart/form-data">
+          {% csrf_token %}
+    
+          <label>Firstname :</label><br>{{form.first_name}}<br>
+    
+          <label>Lastname :</label><br>{{form.last_name}}<br>
+    
+          <label>Username :</label><br>{{form.username}}<br>
+
+          <label>Hotel Name :</label><br>{{extend_form.hotel_name}}<br>
+       
+          <label>Email :</label><br>{{form.email}}<br>     
+    
+          <label>Mobile No :</label><br>{{extend_form.contact_no}}<br>
+
+          <label>Hotel Image :</label><br>{{extend_form.hotel_image}}<br>
+
+          <label>Password :</label><br>{{form.password1}}<br> 
+    
+          <label>Confirm Password :</label><br>{{form.password2}}<br>
+
+          <label>status:</label><br>{{form.is_staff}}<br>
+    
+          <!-- <input type="checkbox"><label>I accept terms and conditions</lable>     -->
+            <center>
+
+            <button>submit</button>
+          
+      </form> 
+
+    </center>
+
+      </div>
+    </div>
+ 
+
+
+
+
+    <!--  {{form.as_p}}
+     {{extend_form.as_p}} -->
+<!-- 
+    <button>add</button> -->
+
+
+</body>
+</html>

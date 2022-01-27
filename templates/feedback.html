@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CONTACT</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<style>
+
+#demo0{
+width: 1500px;
+height: 700px;
+background-color:;
+margin-top: 150px;
+}
+.demo1{
+width: 720px;
+height: 300px;
+background-color:lightgreen;
+/*margin-top: 50px;*/
+margin-left: 380px;
+}
+.demo2{
+width: 720px;
+height: 300px;
+background-color: #0d0a27;
+margin-left: 380px;
+
+}
+.demo3{
+width: 300px;
+height: 400px;
+background-color: lightgrey;
+margin-top: -515px;
+margin-left: 590px;
+border-radius: 100px;
+
+}
+.demo4{
+margin-left: 50px;
+margin-top: 27px;
+}
+i{
+color: #0d0a27;
+}
+h5{
+margin-left: 30px;
+margin-top: -20px;
+
+}
+input{
+border: none;
+height:29px;
+border-radius: 15px;
+color: red;
+}
+button{
+width: 170px;
+height: 30px;
+border-radius: 20px;
+background-color: #0d0a27;
+color: white;
+}
+</style>
+<body>
+<div class="container" id="demo0">
+<br><br><br>
+
+<div class="demo1">
+<br><br><br>
+<div class="demo4">
+
+</div>
+</div>
+<div class="demo2">
+
+</div>
+<div class="demo3">
+<br>
+<center>
+<h3> 
+FEEDBACK
+</h3>
+<br><br>
+
+
+<form method="POST">
+{% csrf_token %}
+<p>Name</p>
+{{form.Name}}
+
+<p>Mail</p>
+{{form.Mail}}
+
+<p>Feedback</p>
+{{form.Feedback}}
+<!-- {{form.as_p}} -->
+<!-- <input type="text" placeholder="Your Name..">
+<br><br>
+<input type="text" placeholder="Your Mail..">
+<br><br>
+<input type="text" placeholder="Message.."> -->
+<br><br>
+<button alert="feedback added successfully">send</button>
+<br><br><br><br>
+<a style="color: white;" href="{% url 'adminhome' %}">Back to home</a>
+</form>
+</center>
+</div>
+</div>
+</body>
+</html>
+
+

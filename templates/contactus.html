@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/contactus.css' %}">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background: url({% static 'images/about12.jpg' %}");>
+	
+	<nav class="navbar">         
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"><p class="logo">Book my Rooms</p></a>
+        </div>
+          <ul class="nav navbar-nav">
+          	  <li class="navlist1"><a class="navlink3" href="{% url 'aboutus' %}">About Us</a></li>
+          	  <li class="navlist1"><a class="navlink4" href="#">Contact Us</a></li>
+              <li class="navlist1"><a class="navlink1" href="{% url 'feedback' %}">feedback</a></li>
+              <!-- <li class="navlist1"><a class="navlink2" href="C:\\Users\\arifc\\Desktop\\projet\\hotellogin.html">Login/SignUp</a></li> -->
+          </ul>
+    </nav>
+
+	
+	<div class="contact-section">
+		<div class="contact-info">
+			<div><i class="fas fa-map-marker-alt"></i>Avanue building,kerala,india</div>
+			<div><i class="fas fa-envelope"></i>BOOK my ROOMS@gmail.com</div>
+			<div><i class="fas fa-phone"></i>+91 1213 1233 342</div>
+			<div><i class="fas fa-clock"></i>24/7</div>
+		</div>
+		<div class="contact-form">
+			<h2>Contact Us</h2>
+			<form method="POST">
+					{% csrf_token %}
+					Name
+					{{form.name}}<br>
+					Email
+					{{form.email}}<br>
+					<!-- {{form.email}}<br> -->
+					Messsage
+					{{form.message}}
+
+
+
+<!-- 				<input type="text" name="name" class="text-box" placeholder="your name"> -->
+				<!-- <input type={{form.email}} name="email" class="text-box" placeholder="your email"> -->	
+				<!-- <textarea name="message" rows="5" placeholder="your meassage"></textarea> -->
+				<input type="submit" name="submit" class="send-btn" value="send">
+			</form>
+			
+		</div>
+	</div>
+
+
+</body>
+</html>

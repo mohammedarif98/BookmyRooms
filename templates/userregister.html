@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"> -->
+      <link rel="stylesheet" type="text/css" href="{% static 'css/userregister.css' %}">
+<!--       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+	<title></title>
+</head>
+<body background="{% static 'images/about5.jpg' %}">
+	<div class="container">
+   
+      <div class="border-box" >
+        <h1><b>signup</b></h1>
+
+    <center>   
+      <form method="POST"  enctype="multipart/form-data">
+          {% csrf_token %}
+    
+          <label>Firstname :</label><br>{{form.first_name}}<br>
+    
+          <label>Lastname :</label><br>{{form.last_name}}<br>
+    
+          <label>Username :</label><br>{{form.username}}<br>
+       
+          <label>Email :</label><br>{{form.email}}<br>     
+    
+          <label>Age :</label><br>{{extend_form.dob}}<br>
+    
+          <label>Mobile No :</label><br>{{extend_form.mobile_no}}<br>
+
+          <!-- <label>Address :</label><br>{{extend_form.address}}<br> -->
+
+          <label>Password :</label><br>{{form.password1}}<br> 
+    
+          <label>Confirm Password :</label><br>{{form.password2}}<br>
+    
+          <!-- <input type="checkbox"><label>I accept terms and conditions</lable>     -->
+            <center>
+
+            <button>submit</button>
+          
+      </form> 
+
+    </center>
+
+      </div>
+    </div>
+ 
+ <!-- <form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form.as_p}}
+    {{extend_form.as_p}}
+    <button class="btn btn-success">Sign Up</button>
+  </form>  --> 
+
+
+
+</body>
+</html>

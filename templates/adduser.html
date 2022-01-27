@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	 <form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form.as_p}}
+    {{extend_form.as_p}}
+    <button class="btn btn-success">Sign Up</button>
+  </form>           
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<center><div class="add">
+		<form method="POST" enctype="multipart/form-data">
+			{% csrf_token %}
+			{{form.as_p}}
+			<button class="">add</button>
+		</form>
+	</div></center>
+
+
+<style>
+	.add{
+		background-color:lightgray;
+		margin-top: 200px;
+		width:600px ;
+		height:450px ;
+		padding-top: 100px;
+		border-radius: 30px;
+	}
+	button{
+		width:150px;
+		height:30px;
+		background-color: lightgreen;
+		border-radius: 30px; 
+	}
+
+</style>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table border="2px">
+		<tr>
+			<th>Hotel Name</th>
+			<th>Contact</th>
+			<!-- <th>Contact</th> -->
+			<th>Hotel Image</th>
+		</tr>
+				{% for i in hotelreglist %}
+
+					<tr>
+						<td><a style="text-decoration: none;font-size: 20px; font-weight: bolder;color: black" href="{% url 'hotelregisterdetail' i.id %}">{{i.hotel_name}}</a></td>
+						<!-- <td>{{i.address}}</td> -->
+						<td>{{i.contact_no}}</td>
+						<td><img src="{{i.hotel_image.url}}" height="300" width="300"></td>
+						<td><button style="background-color:green; width:150px; height: 40px;"><a style="text-decoration: none; color: black;font-size: 15px;" href="{% url 'hotelregisterupdate' i.id %}">edit</a></button></td>
+					</tr>
+
+				{% endfor %}
+	</table>
+</body>
+</html>

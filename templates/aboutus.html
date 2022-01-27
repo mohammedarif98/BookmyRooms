@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/aboutus.css' %}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background:linear-gradient(0deg ,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({% static 'images/about5.jpg' %}");>
+  <div class="container-fluid"> 
+    <nav class="navbar">         
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"><p class="logo">Book my Rooms</p></a>
+        </div>
+          <ul class="nav navbar-nav">
+              <li class="navlist1"><a class="navlink3" href="#">About Us</a></li>
+              <li class="navlist1"><a class="navlink4" href="{% url 'contactus' %}">Contact Us</a></li>
+              <li class="navlist1"><a class="navlink1" href="{% url 'feedback' %}">feedback</a></li>
+             <!--  <li class="navlist1"><a class="navlink2" href="C:\\Users\\arifc\\Desktop\\projet\\hotellogin.html">Login/SignUp</a></li> -->
+          </ul>
+    </nav>
+	<div class="demo">
+		<p class="demo1">"<b>BOOK my ROOMS</b> is a indian platform that empowers entrepreneurs and small businesses  <br>with hotels and homes by providing full stack technology that increases earnings and eases operations.   <br> Bringing affordable and trusted accommodation that guests can book instantly."</p>
+	</div>
+
+
+<div class=""><center>
+  <div class="hotel">
+    <img src="{% static 'images/hotel.svg' %}">
+    <h3> 10k+ Hotels</h3>
+    <p>We aggregate the best deals by connecting<br>with over 100,000 hotels worldwide.</p>
+  </div>
+
+  <div class="states">
+    <img src="{% static 'images/countries.svg' %}">
+    <h3>20+ States</h3>
+    <p>Choose your destination from over<br>20+ states all around the world.</p>  
+  </div>
+
+  <div class="cities">
+    <img src="{% static 'images/cities.svg' %}">
+    <h3> 200+ Cities</h3>
+    <p>We make it easy for you to find a hotel<br>wherever you are traveling next.</p>  
+  </div>
+</div></center>
+
+<a href="{% url 'logout' %}"></a>
+</body>
+</html>

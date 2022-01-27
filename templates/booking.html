@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title></title>
+</head>
+<body>
+    <div class="box"><center> 
+	<form method="POST">
+		{% csrf_token %}
+       
+        <table border="0px">
+        	
+        		<tr><td>Name :{{user}}</td></tr>
+        		<tr><td>Hotel Name :{{hotel_booked}}</td></tr>
+        		<tr><td>Amount :{{price}}</td></tr>       	
+        </table>
+        <br><br>
+		{{date_form.as_p}}
+		<button type="" class="btn btn-success">next</button>
+
+        
+	</form></center>
+</div>
+<style>
+    
+.box{
+    /*border:0px;
+    border: solid;
+    border-color: black;*/
+    width: 400px;
+    height: 400px;
+    margin-top: 300px;
+    margin-left:800px;
+    padding-top:150px;
+    background-color:royalblue;
+    border-radius: 10px;
+}
+button{
+    width: 100px;
+    height:30px;
+    margin-top:30px;
+    
+}
+td {
+    padding-top: 5px;
+    margin-bottom: 100px;
+    font-weight: bold;
+}
+table{margin-top: -60px;}
+
+
+</style>
+
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<title>admin</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+      <center>
+    <h1 style="color:#B02F2F"><b>ADMIN HOME</b></h1>
+    </center>
+    <div class="w3-section w3-bottombar w3-padding-16">
+    </div>
+    </div>
+  </header>
+
+<style>
+  .navbar-brand{
+
+  color:black;
+
+  font-family: "Brush Script MT",cursive;
+}
+.logo{  color:crimson;
+      font-size:40px;
+}
+.w3-bar-block a{
+    margin-top: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+  
+
+}
+
+/*:hover{ background:mediumslateblue;}*/
+
+
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<!-- <body class=" w3-content" style="max-width:1600px; background:#5B5757"> -->
+  <body style="background: url({% static 'images/staffhom.jpg' %}");>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;height: 800px" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <a class="navbar-brand" href="#"><p class="logo">Book my Rooms</p></a><br><br><br><br><br><br>
+   
+  
+  </div>
+  <div class="w3-bar-block">
+ 
+    <a href="{% url 'reg' %}"class="w3-bar-item w3-button w3-padding"><center> ADD USER</center></a>
+    <a href="{% url 'userregisterlist' %}" class="w3-bar-item w3-button w3-padding"><center> VIEW USER </center></a>
+    <a href="{% url 'hotelregister' %}" class="w3-bar-item w3-button w3-padding"><center> ADD HOTEL </center></a>
+    <a href="{% url 'hotelregisterlist' %}" class="w3-bar-item w3-button w3-padding"><center> VIEW HOTEL </center></a>
+    
+    <a href="{% url 'bookeddetail' %}" class="w3-bar-item w3-button w3-padding"><center> BOOKING DETAILS </center></a>
+    <a href="{% url 'roomadding' %}" class="w3-bar-item w3-button w3-padding"><center> ROOM ADDING  </center></a>
+    <a href="{% url 'roomaddedlist' %}" class="w3-bar-item w3-button w3-padding"><center> ROOM DETAIL  </center></a>
+    <a href="{% url 'feedlist' %}" class="w3-bar-item w3-button w3-padding"><center> FEEDBACKS </center></a>
+    <a href="{% url 'contactuslist' %}" class="w3-bar-item w3-button w3-padding"><center> CONTACT_US DETAIL  </center></a>
+    <a href="{% url 'bookmyrooms' %}" class="w3-bar-item w3-button w3-padding"><center> LOG OUT </center></a>
+    
+  </div>
+  
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:300px">
+
+
+  
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

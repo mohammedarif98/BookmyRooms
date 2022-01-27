@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body style="background-color:black"> <!-- style="background: url({% static 'images/about5.jpg' %}");> -->
+	<div class="login-box">
+	<img src="{% static 'images/user.svg' %}" class="icon">
+
+  
+	<div class="heading">
+		<h1>login</h1>
+	</div>
+	
+			 <center>
+        <form method="POST">
+    			{% csrf_token %}
+    			{{form.as_p}}
+           <center><script src='https://www.google.com/recaptcha/api.js'></script>
+         <div class="g-recaptcha" data-sitekey="6LcQNYkdAAAAAMITAcUukAVVXB7S0p-em_1j4w9L"></div></center>
+    			<a class="" href=""><button class="btn btn-success">login</button></a></center>
+	    <!-- <div class="form-group">
+		<input class="form-control" type="text"  placeholder="Enter username">
+	    </div>
+		<div class="form-group">
+		<input class="form-control" type="password" class="form-control" placeholder="Enter password">
+	   </div> -->
+	  <!--  <div class="form-group"><center>
+        <button class="btn btn-success" type="button">login</button></center>
+        </div> -->
+        <div class="link">
+         <center><a href="{% url 'password_reset' %}">forgot password</a></center><br>	
+         <center><a href="{% url 'bookmyrooms' %}">don't have an account?</a></center><br>
+         <center><a class="git" href="{% url 'social:begin' 'github' %}">Login with GitHub</a></center><br>
+        
+
+         </div>
+	</form>
+    </div>
+</body>
+</html>

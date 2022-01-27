@@ -1,0 +1,98 @@
+body{
+/*	background-repeat: no-repeat;
+	background-attachment:fixed;
+    background-size:100%100%;
+    background-blend-mode:normal;*/
+   /* background-position: center;*/
+    
+}
+.login-box{
+          width:520px;
+          height:650px;
+          background:rgba(255,255,255,.7);
+          color:/*#fff*/;
+          top: 50%;
+          left: 50%;
+          position: absolute;
+          transform: translate(-50%,-50%);
+          box-sizing:border-box;
+          border-radius: 30px;
+          padding: 80px 80px	
+}
+.icon{
+      width: 100px;
+      height: 100px	;
+      border-radius:/* 40px*/;
+      position: absolute;
+      top: -50px;
+      left: calc(50% - 50px);
+
+}
+.heading{
+	     padding-bottom: 5px;
+	     color:lime;
+         padding-top: 0px;
+         text-align: center;
+         font-size: 35px;
+         	
+}
+.login-box span{
+	            font-weight: bold;
+	            font-size:20px;
+	            color: black
+
+}
+.login-box input{
+	             /*padding-right:20px;
+	             padding-left: 20px;*/
+	             width: 100%;
+	             margin-bottom:20px;
+	             height: 25px;
+
+	            /* margin-left: 10px;
+	             margin-right: 10px;*/
+}
+ input[type="text"],input[type="password"]
+{
+	border:none;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+	background:transparent
+	outline:none;
+	height: 25px;
+	color:black;
+	font-size:15px;
+	height: 40px;
+	width: 300px;
+	opacity: 2;
+}
+/*.login-box input[type="button"]:hover*/
+{
+	
+}
+ button{
+	                width: 300px;
+	                color: black;
+}
+
+
+  .heading h1{
+  	          margin-bottom: 25px;
+              color:black;
+  } 
+ i{
+              text-align
+              color: lime;
+  }
+
+
+  .git {
+        margin-top: 10;
+  }
+
+  .link a{
+      margin-top: 2px;
+      margin-bottom:3px;
+      color:black;
+      text-decoration: none;
+      list-style: none;
+  }

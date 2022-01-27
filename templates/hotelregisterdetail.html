@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<title></title>
+</head>
+<body>
+
+		<table class="table table-dark table-hover">
+			<tr>
+				<th>User Name</th>
+				<td>{{object.user.username}}</td>
+			</tr>
+			<tr>
+				<th>First Name</th>
+				<td>{{object.user.first_name}}</td>
+			</tr>
+			<tr>
+				<th>Last Name</th>
+				<td>{{object.user.last_name}}</td>
+			</tr>
+			<tr>
+				<th>Hotel Name</th>
+				<td>{{object.hotel_name}}</td>
+			</tr>
+			<tr>
+				<th>Contact</th>
+				<td>{{object.contact_no}}</td>
+			</tr>
+			<tr>
+				<th>Image</th>
+				<td><img src="{{object.hotel_image.url}}" height="200" width="200"></td>
+			</tr>
+			<tr>
+				<th>Email</th>
+				<td>{{object.user.email}}</td>
+			</tr>
+
+
+	
+</body>
+</html>

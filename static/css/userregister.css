@@ -1,0 +1,66 @@
+
+body{
+	background-repeat:no-repeat;
+	background-size:cover;
+    }
+.border-box h1{
+ 	font-weight: bold;
+ 	text-align: center;
+ 	color: black;
+ 	margin-top:10px;
+  margin-bottom:10px;
+  padding-top:20px; 
+  padding-bottom:20px;
+
+    
+   }   
+.border-box{
+	        border-style: solid ;
+	        border-radius:10px;
+          border: none;
+	        margin-left:600px; 
+	        margin-bottom:0px;
+	        margin-top:90px ;
+	        margin-right:600px;
+	        height: 640px;
+	        width: 600px; 
+           }
+.border-box{
+	        /*background-color:white;*/
+	        background:rgba(77, 71, 71,.8);
+	        padding-top: 40px;
+	        padding-bottom: 90px;
+
+           }
+
+
+ button{
+      background-color:skyblue;
+  	  width:350px;
+  	  height:40px;
+      border-radius: 15px;
+  	  color: black;
+      margin-top:40px;
+      font-weight: bold;
+}
+
+   .form-radio {
+   	             justify-content: center;
+                 text-align:center;
+   }    
+   .form-checkbox{
+   	             justify-content: center;
+                  text-align: center;
+   }             
+
+   input{
+    height: 35px;
+    width: 350px;
+    border-radius:5px;
+   }
+
+  label {
+    color:white;
+    margin-top: 10px;
+    margin-bottom:0px;
+   }
